@@ -11,8 +11,7 @@
 Чтобы все заработало, в системе должны быть установлены `cmake`, `gdb` и
 `clang-format`. В VSCode надо добавить плагины [C/C++ Extension
 Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack)
-и
-[Clang-Format](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack).
+и [Clang-Format](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format).
 
 Склонируйте репозиторий и откройте его. 
 ```bash
