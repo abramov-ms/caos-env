@@ -1,0 +1,47 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "makefiles-base",
+            "hidden": true,
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            }
+        },
+        {
+            "name": "debug",
+            "displayName": "Debug",
+            "inherits": "makefiles-base",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "release",
+            "displayName": "Release",
+            "inherits": "makefiles-base",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "asan",
+            "displayName": "ASAN",
+            "inherits": "makefiles-base",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "ASAN"
+            }
+        },
+        {
+            "name": "tsan",
+            "displayName": "TSAN",
+            "inherits": "makefiles-base",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "TSAN"
+            }
+        }
+    ]
+}
